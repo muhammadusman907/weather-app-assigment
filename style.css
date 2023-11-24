@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --white: #F5F5F5;
+    --dark-white: #EAECEF; 
+    --lite-white:#ffffff;
+} 
+body{
+      background-color: var(--blue)!important;
+}
+.parent-div{
+    background-color: var(--dark-white)!important;
+    margin-top: 15px;
+    height: 630px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+}
+.current-data-div{
+    width: 60%;
+    height: 620px;
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.few-days-div{
+    width: 40%;
+    height: 620px;
+    border: solid;
+}
+.current-data-child{
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    border: solid;
+}
+.search-button{
+    display: flex;
+}
+.search-button input{
+    margin-top: 10px;
+   height: 40px;
+   width: 90%;
+}
+.search-button button{
+    margin-top: 10px;
+   height: 40px;
+   width: 10%;
+}
+.icon-tempreature{
+    display: flex;
+}
+.icon-tempreature>div {
+    width: 50%;
+    border: solid;
+    height: 140px;
+}
+.daily-weather-parent{
+     display: flex;
+}
+.daily-weather{
+    height:200px;
+    width: 20%;
+    border: solid;
+}
+
+.air-condition{
+    /* border: solid; */
+    width: 100%;
+    height: 100px;
+    background-color: var(--lite-white)!important;
+
+}
+.air-condition-child1{
+    display: flex;
+}
+.air-condition-child1>div{
+    width: 50%;
+    /* border: solid; */
+    height: 100px;
+}
