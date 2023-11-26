@@ -9,10 +9,10 @@
     --lite-white:#ffffff;
 } 
 body{
-      background-color: var(--blue)!important;
+      background-color: var(--lite-white)!important;
 }
 .parent-div{
-    background-color: var(--dark-white)!important;
+    background-color: var(--lite-white)!important;
     margin-top: 15px;
     height: 630px;
     width: 100%;
@@ -26,6 +26,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    
 }
 .few-days-div{
     width: 40%;
@@ -37,6 +38,7 @@ body{
     height: 200px;
     width: 100%;
     border: solid;
+    background-color: var(--dark-white);
 }
 .search-button{
     display: flex;
@@ -72,7 +74,8 @@ body{
     /* border: solid; */
     width: 100%;
     height: 100px;
-    background-color: var(--lite-white)!important;
+    background-color: var(--dark-white);
+
 
 }
 .air-condition-child1{
@@ -82,4 +85,13 @@ body{
     width: 50%;
     /* border: solid; */
     height: 100px;
+}
+.weather-change-images{
+    display: flex;
+    justify-content: end;
+}
+.weather-change-images img{
+    height: auto;
+    width: 40%;
+    object-fit: contain;
 }
