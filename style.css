@@ -7,22 +7,33 @@
     --white: #F5F5F5;
     --dark-white: #EAECEF; 
     --lite-white:#ffffff;
+    --orange: rgb(255,182,103);
+    --lite-orange:#fcba46;
+    --linear:linear-gradient(90deg, var(--orange), rgb(248, 169, 33) 67%);;
+    --boxshadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 } 
 body{
-      background-color: var(--lite-white)!important;
+    background: var(--orange)!important;
+    background: var(--linear)!important;
+    /* background-image: linear-gradient(90deg , #faf2d6,#FFAA51) !important; */
+    color: var(--lite-white)!important;
+    font-size: 100%;
+      /* background-color: var(--lite-white)!important; */
 }
 .parent-div{
-    background-color: var(--lite-white)!important;
+    /* background-color: var(--lite-white)!important; */
     margin-top: 15px;
     height: 630px;
+    /* border: solid; */
     width: 100%;
     border-radius: 20px;
     display: flex;
+    box-shadow: #fff 0px 2px 8px 0px;
 }
 .current-data-div{
     width: 60%;
-    height: 620px;
-    border: solid;
+    height: 630px;
+    /* border: solid; */
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -31,22 +42,23 @@ body{
 .few-days-div{
     width: 40%;
     height: 620px;
-    border: solid;
+    /* border: solid; */
 }
 .current-data-child{
     margin-top: 10px;
     height: 200px;
     width: 100%;
-    border: solid;
-    background-color: var(--dark-white);
+    /* border: solid; */
+    /* background-color: var(--dark-white); */
 }
 .search-button{
     display: flex;
 }
 .search-button input{
-    margin-top: 10px;
+    margin-top: 5px;
    height: 40px;
-   width: 90%;
+   width: 100%;
+   border-radius: 50px;
 }
 .search-button button{
     margin-top: 10px;
@@ -58,34 +70,10 @@ body{
 }
 .icon-tempreature>div {
     width: 50%;
-    border: solid;
+    /* border: solid; */
     height: 140px;
 }
-.daily-weather-parent{
-     display: flex;
-}
-.daily-weather{
-    height:200px;
-    width: 20%;
-    border: solid;
-}
 
-.air-condition{
-    /* border: solid; */
-    width: 100%;
-    height: 100px;
-    background-color: var(--dark-white);
-
-
-}
-.air-condition-child1{
-    display: flex;
-}
-.air-condition-child1>div{
-    width: 50%;
-    /* border: solid; */
-    height: 100px;
-}
 .weather-change-images{
     display: flex;
     justify-content: end;
@@ -94,4 +82,84 @@ body{
     height: auto;
     width: 40%;
     object-fit: contain;
+}
+.current-data-child2{
+    margin-top: 10px;
+    height: 170px;
+    width: 80%;
+    background-color: var(--orange);
+    box-shadow: var(--boxshadow);
+    border-radius: 15px;
+}
+.daily-weather-parent{
+    display: flex;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin-right: 2%;
+    color: #000;
+   overflow-x :scroll;
+}
+.daily-weather{
+    height:130px;
+    width: 250px;
+    box-shadow: var(--boxshadow);
+    margin-left: 2%;
+    margin-top: 5px;
+    background-color: var(--lite-white);
+    border-radius: 10px;
+    /* border: solid; */
+}
+.daily-weather>div{
+  /* border: solid; */
+  text-align: center;
+  margin-top: 5px
+}
+.daily-weather>img{
+    /* border: solid; */
+    text-align: center;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    /* margin:0 auto; */
+    
+  }
+.daily-weather>h3{
+    margin-top:3px;
+    /* border: solid; */
+    text-align: center;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+.air-condition{
+    /* border: solid; */
+    width: 100%;
+    height: 100px;
+    background-color: var(--orange);
+    border-radius: 15px;
+
+}
+
+.current-data-child3{
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    /* border: solid; */
+    background-color: var(--orange);
+    box-shadow: var(--boxshadow);
+    border-radius: 15px;
+    
+}
+.air-condition-child1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 15px;
+    /* border: solid; */
+}
+.air-condition-child1>div{
+    /* text-align: center; */
+    width: 40%;
+    /* border: solid; */
+    height: 80px;
 }

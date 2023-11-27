@@ -14,7 +14,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- ---------------------------------------------------- -->
+    <!-- ------------------------animation css--------------- -->
+    <!-- --------------------------------------------------- -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- =========================================== -->
+    <!-- ===============font awsome=================== -->
+    <!-- =========================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- =========================================== -->
     <!-- ===============sweet alert=================== -->
     <!-- =========================================== -->
@@ -36,56 +46,88 @@
             <div class="current-data-div container">
                 <div class="current-data-child">
                     <div class="search-button">
-                        <input type="text" class="form-control ">
-                        <button class="btn btn-info">search</button>
+                        <input type="text" class="form-control" placeholder="search">
+                        <!-- <button class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button> -->
                     </div>
                     <div class="icon-tempreature ps-3">
-                        <div class="city-name-tempreatue">
-                            <h2 class="cityname">city name</h2>
-                            <span>chance of rain </span>
-                            <h1 class="tempreature pt-3">30%</h1>
+                        <div class="city-name-tempreatue animate__animated animate__bounceInLeft">
+                            <span class="cityname fs-2" id="city-name">Karachi</span>
+                            <span class="fs-6 ps-1" id="country-name"> pk</span>
+                            <div id="date">chance of rain </div>
+                            <h1 class="tempreature pt-3" id="temp-degree">30<sup>°</sup></h1>
                         </div>
-                        <div class="weather-change-images">
-                            <img src="images/clear.png" alt=""></div>
+                        <div class="weather-change-images animate__animated animate__backInDown">
+                            <img src="images/clear-sun.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="current-data-child ">
-                    <div>today forcast</div>
-                    <div class="daily-weather-parent">
-                        <div class="daily-weather"></div>
-                        <div class="daily-weather"></div>
-                        <div class="daily-weather"></div>
-                        <div class="daily-weather"></div>
-                        <div class="daily-weather"></div>
-                        <div class="daily-weather"></div>
-                        <div class="daily-weather"></div>
-                        <div class="daily-weather"></div>
+                <div class="current-data-child2 container animate__animated animate__bounceInLeft">
+                    <div class="ps-3">today forcast</div>
+                    <div class="daily-weather-parent animate__animated animate__backInDown" id="daily-weather">
+                        <div class="daily-weather">
+                            <div>6 : 00 pm</div>
+                            <div>
+                                <img src="images/clear.png" alt="">
+                            </div>
+                            <h3>30<sup>°</sup></h3>
+                        </div>
+                        
+                        <div class="daily-weather">
+                            <div>6 : 00 pm</div>
+                            <div>
+                                <img src="images/clear-sun.png" alt="">
+                            </div>
+                            <h3>30<sup>°</sup></h3>
+                        </div>
+                        <div class="daily-weather">
+                            <div>6 : 00 pm</div>
+                            <div>
+                                <img src="images/haze.png" alt="">
+                            </div>
+                            <h3>30<sup>°</sup></h3>
+                        </div>
+                        <div class="daily-weather">
+                            <div>6 : 00 pm</div>
+                            <div>
+                                <img src="images/rain-cloud.png" alt="">
+                            </div>
+                            <h3>30<sup>°</sup></h3>
+                        </div>
+                        <div class="daily-weather">
+                            <div>6 : 00 pm</div>
+                            <div>
+                                <img src="images/clear.png" alt="">
+                            </div>
+                            <h3>30<sup>°</sup></h3>
+                        </div>
+                        <!-- <div class="daily-weather"></div>
+                        <div class="daily-weather"></div> -->
                     </div>
                 </div>
-                <div class="current-data-child">
+                <div class="current-data-child3 animate__animated animate__bounceInLeft">
                     <div class="air-condition-parent">
                         <div class="air-condition">
-                            <div class="air-condition-child1 pt-3">
-                                <div class="ps-3 ">
-                                    <span>feels like
+                            <div class="air-condition-child1 pt-2 ">
+                                <div>
+                                    <span>  <img src="images/cloud.png" alt=""> feels like
                                     </span>
-                                    <p>30</p>
+                                    <h2>30</h2>
                                 </div>
                                 <div>
-                                    <span>feels like
+                                    <span> <img src="images/rain-cloud.png" alt=""> feels like
                                     </span>
-                                    <p>30</p>
+                                    <h2>30</h2>
                                 </div>
                             </div>
                         </div>
                         <div class="air-condition">
                             <div class="air-condition">
-                                <div class="air-condition-child1">
-                                    <div><span class="ps-3">feels like</span>
-                                        <p class="ps-3">30</p>
+                                <div class="air-condition-child1 pt-2">
+                                    <div><span> <img src="images/clear-sun.png" alt=""> feels like</span>
+                                        <h2>30</h2>
                                     </div>
-                                    <div><span > feels like</span>
-                                        <p>30</p>
+                                    <div><span> <img src="images/haze.png" alt=""> feels like</span>
+                                        <h2>30</h2>
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +142,7 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./app.js"></script>
 </body>
 
