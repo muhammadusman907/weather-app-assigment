@@ -1,14 +1,15 @@
 // // 2dc116c14166719e8d646146d04ebd95 api key
 // navigator.geolocation.
+let searchInput = document.getElementById ("search")
 let cityName = document.getElementById("city-name")
 let countryName = document.getElementById("country-name")
 let tempDegree = document.getElementById("temp-degree")
 let todayDate = document.getElementById("date")
 let dailyWeather = document.getElementById("daily-weather")
-let tempreature = document.getElementById("temprature")
+let cloud = document.getElementById("cloud")
 let humidity = document.getElementById("humidity")
 let feelsLike = document.getElementById("feels-like")
-let wind = document.getElementById("wind")
+let winds = document.getElementById("wind")
 let src ;
 navigator.geolocation.getCurrentPosition((res) => {
 
@@ -23,14 +24,19 @@ navigator.geolocation.getCurrentPosition((res) => {
             // =================================================
             // ===================current data =================
             // =================================================
-            let { name, sys, wind, dt ,main} = data;
+            let { name, sys, wind, dt ,main,clouds} = data;
             let dateString = JSON.stringify(dt);
             // console.log( dateString )
             cityName.innerHTML = name;
             tempDegree.innerHTML = Math.ceil(main.temp ) + `<sup>°</sup>`;
             countryName.innerHTML = sys.country.slice(0, 10);
             todayDate.innerHTML = moment.unix(dateString).format("DD MMM YYYY hh:mm a");
+            feelsLike.innerHTML = main.feels_like;
+            cloud.innerHTML =  clouds.all;
+            winds.innerHTML = main.pressure;
+            humidity.innerHTML = main.humidity;
             console.log(data)
+            console.log(wind)
         }
 
 
@@ -86,3 +92,14 @@ navigator.geolocation.getCurrentPosition((res) => {
 
         .catch(error => console.log(error))
 })
+
+
+// window.addEventListener("keydown",(event)=>{
+//     console.log(event.keyCode)
+// })
+let search = ()=>{
+    if(event.keyCode == 13 ){
+    console.log(searchInput.value)
+    console.log(event.keyCode)
+    }
+}

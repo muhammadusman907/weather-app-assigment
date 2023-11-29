@@ -46,7 +46,7 @@
             <div class="current-data-div container">
                 <div class="current-data-child">
                     <div class="search-button">
-                        <input type="text" class="form-control" placeholder="search">
+                        <input type="text" class="form-control" id="search" placeholder="search" onkeydown="search()">
                         <!-- <button class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button> -->
                     </div>
                     <div class="icon-tempreature ps-3">
@@ -109,24 +109,24 @@
                         <div class="air-condition">
                             <div class="air-condition-child1 pt-2 ">
                                 <div>
-                                    <span>  <img src="images/cloud.png" alt=""> Humidity
+                                    <span>  <img src="images/humidity.png" alt=""> Humidity
                                     </span>
                                     <h2 id="humidity">30</h2>
                                 </div>
                                 <div>
-                                    <span> <img src="images/rain-cloud.png" alt=""> Wind
+                                    <span> <img src="images/wind.png" alt=""> Wind
                                     </span>
-                                    <h2 id="wind">30</h2>
+                                    <h2 id="wind"></h2>
                                 </div>
                             </div>
                         </div>
                         <div class="air-condition">
                             <div class="air-condition">
                                 <div class="air-condition-child1 pt-2">
-                                    <div><span> <img src="images/clear-sun.png" alt=""> Temp</span>
-                                        <h2 id="tempreature">30</h2>
+                                    <div><span> <img src="images/cloud.png" alt=""> cloud</span>
+                                        <h2 id="cloud">30</h2>
                                     </div>
-                                    <div><span> <img src="images/haze.png" alt=""> feels like</span>
+                                    <div><span> <img src="images/tempreature.png" alt=""> feels like</span>
                                         <h2 id="feels-like">30</h2>
                                     </div>
                                 </div>
